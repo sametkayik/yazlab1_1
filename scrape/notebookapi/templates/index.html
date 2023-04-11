@@ -1,0 +1,213 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="referrer" content="no-referrer-when-downgrade">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+	<link rel="dns-prefetch" href="//cdn.akakce.com" />
+	<link rel="dns-prefetch" href="//akakce.akamaized.net" />
+	<link rel="dns-prefetch" href="//www.google-analytics.com" />
+	<link rel="dns-prefetch" href="//iis-akakce.akamaized.net">
+	<link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font"
+		type="font/woff2" crossorigin>
+	<link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" as="font"
+		type="font/woff2" crossorigin>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	</style>
+	<link type="text/css" rel="stylesheet" href="//akakce.akamaized.net/styles/mobilec.css?2022101110">
+	
+	
+	
+    
+    
+</head>
+
+<body>
+	<h1>Laptop ve Notebook</h1>
+	<h2>Laptop ve Notebook Fiyatları</h2>
+
+	<p class="rw_v8 cti_v8">{{len}}<b> farklı Laptop ve Notebook</b> için fiyatlar listeleniyor.</p>
+
+	<noscript><iframe src="" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<div id="H_v8" class="sfv_p1 sfv_p2">
+		<div id="H_bg_v8"></div>
+		<a class="topBanner" target="_self" rel="sponsored nofollow"></a>
+		<header class="rw_v8" id="Marvin">
+			<div class="g-4_v8">
+				<a id="" href="http://127.0.0.1:8000/" title="Anasayfaya gitmek için tıklayın"></a>
+			</div>
+			<div class="g-3_v8">
+				<span id="H_st_v8" title="Arama">Arama</span>
+			</div>
+			<div class="g-5_v8 r-sm_v8">
+				<!-- Arama Çubuğu -->
+				<form class="navbar-form navbar-left" role="search" method="GET" action="">
+					<div class="input-group">
+						<input  class="form-control" type="text" name="q" placeholder="Arama Yap" value="">
+						<span class="input-group-btn">
+							<input class="btn btn-default" type="submit" value="Ara">
+						</span>
+					</div>
+				</form>
+			</div>
+		</header>
+	</div>
+	<div class="rw_v8">
+		<form method="GET" action="">
+		<div class="pph_v8">
+			<p class="lms_v8">
+				<a href="" >En Düşük Fiyat</a>
+				<a href="" >En Yüksek Fiyat</a>
+			</p>
+		</div>
+	</form>
+		<ul id="CPL" class="pl_v8 qv_v8">
+			{% for prd in posts %}
+			<li data-pr="1860287738" data-mk="Lenovo" data-cp="16" data-qv="4" data-g="1" data-fc="100" class="w"><a
+        href="{{prd.notebook_url}}"
+					class="pw_v8"
+					title="{{prd.title}}">
+					<figure class="iw_v8" ><img
+							src="{{prd.image_url}}"
+							alt="{{prd.title}}"
+							style="background: none; opacity: 1; min-height: unset; min-width: unset;"></figure><span class="w_v8">
+						<h3 class="pn_v8">{{prd.title}}</h3><span class="pb_v8"><span class="pt_v8">{{prd.price}}<i></i></span></span>
+					</span><i class="qv-cl_v8"></i>
+				</a>
+				<div class="p_w_v8">
+					<ul>
+						<li class="b"><a
+								href="{{prd.notebook_url}}"
+								target="_blank" class="iC" title="Satıcıya Git" rel="nofollow"><span class="pb_v8"><span class="pt_v8">{{prd.price}} TL</span></span><span
+									class="l"><a style="color:blue;font-size:30px;" href="{{prd.notebook_url}}">{{prd.site}}</span></a></li>
+
+						<!-- <li><a href="/c/?z=134&amp;v=11070&amp;s=31&amp;p=1860287738&amp;c=15663&amp;g=3524159&amp;f=%2Fr%2F%3Fpr%3D1860287738%26vd%3D11070%26pg%3D3524159"
+								target="_blank" class="iC" title="Satıcıya Git" rel="nofollow"><span class="pb_v8"><span
+										class="pt_v8">{{prd.price}}<i>,98 TL</i></span><em class="uk_v8">Ücretsiz kargo</em></span><span
+									class="l"><i><img alt="Teknosa" src="//cdn.akakce.com/im/m6/10402.svg"></i></span></a></li>
+
+						<li><a href="/c/?z=134&amp;v=10694&amp;s=32&amp;p=1860287738&amp;c=21533&amp;g=18535901&amp;f=%2Fr%2F%3Fpr%3D1860287738%26vd%3D10694%26pg%3D18535901"
+								target="_blank" class="iC" title="Satıcıya Git" rel="nofollow"><span class="pb_v8"><span
+										class="pt_v8">{{prd.price}}<i>,00 TL</i></span><em class="uk_v8">Ücretsiz kargo</em></span><span
+									class="l"><i><img alt="N11" src="//cdn.akakce.com/im/m6/11070.svg"></i></span></a></li> -->
+					</ul>
+				</div>
+			</li>
+			{% endfor %}
+        
+
+		</ul>
+		
+		<p class="pager_v8">
+			{% if posts.has_previous %}
+			<a class="" href="?page={{ posts.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}" onclick="">Önceki</a>
+			{% endif %}
+			<span class="current">
+                Sayfa {{ posts.number }} / {{ posts.paginator.num_pages }}
+            </span>
+		{% if posts.has_next %}
+		<a class=""	href="?page={{ posts.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">Sonraki</a></p>
+		{% endif %}
+		<section class="lmf_v8">
+			<div class="fmmh_v8">Filtrele</div><span id="fmmc_v8"></span>
+			
+			<form method="GET" action="" id="FF_v8" class="ff_v8"><b>Marka</b><span class="mk_v8">
+				{% for product in marka %}
+				<div class="form-check mt-3">
+					<input class="form-check-input" type="checkbox" id="{{ product.marka }}" value="{{ product.marka }}" name="q" />
+					<label class="form-check-label" for="{{ product.marka }}">{{ product.marka }}</label>
+				</div>
+				{% endfor %}
+
+				</span>
+				</span>
+
+				<b>İşlemci</b><span class="mk_v8">
+				{% for product in islemci %}
+				<div class="form-check mt-3">
+					<input class="form-check-input" type="checkbox" id="{{ product.cpu_type }}" value="{{ product.cpu_type }}" name="q" />
+					<label class="form-check-label" for="{{ product.cpu_type }}">{{ product.cpu_type }}</label>
+				</div>
+				{% endfor %}
+
+				</span>
+				</span>
+
+				<b>Ram</b><span class="mk_v8">
+				{% for product in ram %}
+				<div class="form-check mt-3">
+					<input class="form-check-input" type="checkbox" id="{{ product.memory_capacity }}" value="{{ product.memory_capacity }}" name="q" />
+					<label class="form-check-label" for="{{ product.memory_capacity }}">{{ product.memory_capacity }}</label>
+				</div>
+				{% endfor %}
+
+			</span>
+			</span>
+
+			<b>Ekran</b><span class="mk_v8">
+			{% for product in ekran %}
+			<div class="form-check mt-3">
+				<input class="form-check-input" type="checkbox" id="{{ product.screen_size }}" value="{{ product.screen_size }}" name="q" />
+				<label class="form-check-label" for="{{ product.screen_size }}">{{ product.screen_size }}</label>
+			</div>
+			{% endfor %}
+
+		</span>
+		</span>
+
+		<b>İşletim Sistemi</b><span class="mk_v8">
+		{% for product in isletim %}
+		<div class="form-check mt-3">
+			<input class="form-check-input" type="checkbox" id="{{ product.dos }}" value="{{ product.dos }}" name="q" />
+			<label class="form-check-label" for="{{ product.dos }}">{{ product.dos }}</label>
+		</div>
+		{% endfor %}
+	
+	</span>
+	</span>
+
+		<b>Disk Türü</b><span class="mk_v8">
+			{% for product in disk_tipi %}
+			<div class="form-check mt-3">
+				<input class="form-check-input" type="checkbox" id="{{ product.disc_type }}" value="{{ product.disc_type }}" name="q" />
+				<label class="form-check-label" for="{{ product.disc_type }}">{{ product.disc_type }}</label>
+			</div>
+			{% endfor %}
+		</span>
+	</span>
+				
+		<b>Disk Tipi</b><span class="mk_v8">
+			{% for product in disk %}
+			<div class="form-check mt-3">
+				<input class="form-check-input" type="checkbox" id="{{ product.disc_type }}" value="{{ product.disc_type }}" name="q" />
+				<label class="form-check-label" for="{{ product.disc_type }}">{{ product.disc_type }}</label>
+			</div>
+			{% endfor %}
+	
+		</span><button type="submit" class="toggle">Filtrele</button>
+		</span><button class="toggle">Tüm Bilgisayarlar</button>
+
+
+		</form>
+
+
+		</section>
+		
+			
+	</div>
+	
+
+</body>
+
+</html>
